@@ -29,7 +29,182 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-12-28T17:57:39.000Z" title="2024/12/29 01:57:39">2024-12-29</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-12-28T18:22:06.396Z" title="2024/12/29 02:22:06">2024-12-29</time></span><span class="level-item"><a class="link-muted" href="/categories/java1/">java1</a><span> / </span><a class="link-muted" href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/">大数据1</a></span><span class="level-item">a few seconds read (About 52 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/12/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a></p><div class="content"><h1 id="我的第一篇博客文章"><a href="#我的第一篇博客文章" class="headerlink" title="我的第一篇博客文章"></a>我的第一篇博客文章</h1><p>这是我的第一篇博客文章。<br>这是第一行代码。<br>这是第二行代码。</p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-12-29T04:44:11.000Z" title="2024/12/29 12:44:11">2024-12-29</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-12-29T04:46:00.448Z" title="2024/12/29 12:46:00">2024-12-29</time></span><span class="level-item"><a class="link-muted" href="/categories/java1/">java1</a><span> / </span><a class="link-muted" href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/">大数据1</a></span><span class="level-item">13 minutes read (About 1996 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/12/29/flink01/">我的测试博客</a></p><div class="content"><h3 id="Flink-相关介绍"><a href="#Flink-相关介绍" class="headerlink" title="Flink 相关介绍"></a><strong>Flink 相关介绍</strong></h3><p>Apache Flink 是一个开源的分布式流处理框架，专为大规模数据流处理设计。它能够处理无界和有界数据流，并提供高吞吐量、低延迟的流处理能力。Flink 采用流处理模型，而不是传统的批处理模型，即使数据以批次的方式出现，Flink 也将其视作连续的数据流进行处理。</p>
+<p>Flink 在大数据实时处理、事件驱动应用、数据管道等方面应用广泛。其具有高可用性、高容错性、流批一体等特点，广受流处理领域的关注。</p>
+<hr>
+<h3 id="Flink-的关键特性"><a href="#Flink-的关键特性" class="headerlink" title="Flink 的关键特性"></a><strong>Flink 的关键特性</strong></h3><ol>
+<li><p><strong>流处理与批处理一体化</strong></p>
+<ul>
+<li>Flink 是一个流处理框架，但它支持批处理操作，并且批处理操作本质上也被视为流处理的一个特例。即数据集在 Flink 中被视为一个有限的数据流，这使得 Flink 在处理有界和无界数据流时有统一的抽象。</li>
+</ul>
+</li>
+<li><p><strong>高吞吐量和低延迟</strong></p>
+<ul>
+<li>Flink 提供低延迟、高吞吐量的实时数据处理能力，适合需要快速响应的实时应用场景。</li>
+</ul>
+</li>
+<li><p><strong>事件时间和处理时间</strong></p>
+<ul>
+<li>Flink 提供事件时间（Event Time）和处理时间（Processing Time）两种时间语义，可以处理乱序数据和延迟数据。</li>
+<li>通过 Watermark（水印机制）来解决乱序问题，使得流处理能够根据事件的实际时间来进行计算。</li>
+</ul>
+</li>
+<li><p><strong>状态管理</strong></p>
+<ul>
+<li>Flink 提供强大的状态管理能力，支持有状态流处理操作。它的状态可以是 Keyed 状态（针对每个 key 的状态）或操作符状态（针对整个操作符的状态）。</li>
+<li>状态被持久化，可以使用外部存储系统如 RocksDB 来存储大规模的状态。</li>
+</ul>
+</li>
+<li><p><strong>容错性</strong></p>
+<ul>
+<li>Flink 采用 <strong>checkpointing</strong>（快照机制）来保证数据的一致性和容错能力。系统通过定期保存应用的状态，并在出现故障时从最新的有效状态恢复。</li>
+<li>Flink 支持端到端的准确一次（Exactly Once）语义，保证数据不会丢失，也不会重复处理。</li>
+</ul>
+</li>
+<li><p><strong>内存和分布式计算优化</strong></p>
+<ul>
+<li>Flink 具有内存管理的优势，支持高效的网络通信和大规模数据的分布式处理。</li>
+<li>它的作业可以跨多台机器运行，并且根据任务的负载进行自动的资源调度。</li>
+</ul>
+</li>
+<li><p><strong>灵活的窗口机制</strong></p>
+<ul>
+<li>Flink 提供多种窗口机制，包括滑动窗口、滚动窗口、会话窗口等，支持根据事件时间对数据流进行切分和计算。</li>
+</ul>
+</li>
+<li><p><strong>流批统一的 API</strong></p>
+<ul>
+<li>Flink 的 API 允许开发者以一致的方式处理有界和无界数据。批处理的数据被当做一个流处理的有限窗口来处理，从而实现批流统一。</li>
+</ul>
+</li>
+<li><p><strong>扩展性与集成</strong></p>
+<ul>
+<li>Flink 支持与多种数据源和接收器的集成，如 Kafka、HDFS、ElasticSearch、Cassandra、JDBC 等。Flink 的连接器提供了多种输入和输出接口，方便与其他数据系统进行交互。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="Flink-的架构组成"><a href="#Flink-的架构组成" class="headerlink" title="Flink 的架构组成"></a><strong>Flink 的架构组成</strong></h3><p>Flink 的架构由以下几部分组成：</p>
+<ol>
+<li><p><strong>Flink 客户端</strong>：</p>
+<ul>
+<li>提供与 Flink 集群的交互，用户通过客户端提交作业。</li>
+<li>可以是命令行工具、Flink Web UI 或者其他集成工具。</li>
+</ul>
+</li>
+<li><p><strong>JobManager</strong>：</p>
+<ul>
+<li>JobManager 是 Flink 集群的协调者，负责调度作业、分配任务、管理作业的状态等。JobManager 确保作业在多个 TaskManager 之间进行正确分配和调度。</li>
+</ul>
+</li>
+<li><p><strong>TaskManager</strong>：</p>
+<ul>
+<li>TaskManager 是 Flink 集群的工作节点，负责执行实际的计算任务。每个 TaskManager 负责一个或多个任务的执行，并通过网络与其他 TaskManager 进行数据交换。</li>
+</ul>
+</li>
+<li><p><strong>Dispatcher</strong>：</p>
+<ul>
+<li>Dispatcher 是 JobManager 的一部分，负责处理客户端提交的作业请求，并为每个作业创建新的作业执行环境。</li>
+</ul>
+</li>
+<li><p><strong>Flink Web UI</strong>：</p>
+<ul>
+<li>提供一个 Web 界面，用于查看和管理作业的执行状态，查看集群的资源使用情况，监控任务的进度和性能等。</li>
+</ul>
+</li>
+<li><p><strong>State Backend</strong>：</p>
+<ul>
+<li>Flink 提供多种后端存储系统来管理作业的状态，如 RocksDB、FsStateBackend 等。状态的持久化保障了作业的容错性。</li>
+</ul>
+</li>
+<li><p><strong>Checkpointing 和 Savepoints</strong>：</p>
+<ul>
+<li><strong>Checkpointing</strong> 是 Flink 保证容错机制的核心，它周期性地保存作业的状态。如果作业失败，可以从最近的 checkpoint 恢复。</li>
+<li><strong>Savepoints</strong> 是用户手动触发的作业状态快照，用于版本升级和任务恢复。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="Flink-核心组件与-API"><a href="#Flink-核心组件与-API" class="headerlink" title="Flink 核心组件与 API"></a><strong>Flink 核心组件与 API</strong></h3><ol>
+<li><p><strong>DataStream API</strong>：</p>
+<ul>
+<li>用于无界数据流处理。用户可以通过 DataStream API 编写实时流处理作业。</li>
+<li>支持的操作包括 map、filter、window、join 等。</li>
+</ul>
+</li>
+<li><p><strong>DataSet API</strong>：</p>
+<ul>
+<li>用于有界数据集（批数据）的处理。</li>
+<li>支持的操作包括 map、reduce、join、groupBy 等。</li>
+</ul>
+</li>
+<li><p><strong>Table API 和 SQL</strong>：</p>
+<ul>
+<li>Flink 提供了类似 SQL 的查询接口，用户可以通过 Table API 或 SQL 查询流数据。这提供了类似关系型数据库的查询方式，非常适合结构化数据的实时处理。</li>
+</ul>
+</li>
+<li><p><strong>Flink CEP（Complex Event Processing）</strong>：</p>
+<ul>
+<li>用于模式识别和复杂事件处理。Flink CEP 使得用户能够检测数据流中的复杂事件模式，如时间间隔、并发模式等。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="Flink-部署模式"><a href="#Flink-部署模式" class="headerlink" title="Flink 部署模式"></a><strong>Flink 部署模式</strong></h3><p>Flink 支持多种部署模式，满足不同环境的需求：</p>
+<ol>
+<li><p><strong>Standalone Cluster</strong>：</p>
+<ul>
+<li>最基本的 Flink 部署模式，在自定义的硬件上部署 Flink 集群，JobManager 和 TaskManager 都在集群中运行。</li>
+</ul>
+</li>
+<li><p><strong>YARN</strong>：</p>
+<ul>
+<li>Flink 可以与 Hadoop YARN 集群管理器集成，使用 YARN 来管理资源调度。适用于已经有 Hadoop 集群的环境。</li>
+</ul>
+</li>
+<li><p><strong>Kubernetes</strong>：</p>
+<ul>
+<li>Flink 支持在 Kubernetes 上部署，Kubernetes 提供了更强的资源管理和弹性扩展能力，适合容器化和云环境部署。</li>
+</ul>
+</li>
+<li><p><strong>Mesos</strong>：</p>
+<ul>
+<li>通过 Mesos 提供的资源管理框架来调度 Flink 作业。Mesos 提供了资源隔离和高可用性。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="Flink-使用场景"><a href="#Flink-使用场景" class="headerlink" title="Flink 使用场景"></a><strong>Flink 使用场景</strong></h3><p>Flink 在多个领域有广泛的应用，特别适用于以下场景：</p>
+<ol>
+<li><p><strong>实时数据流处理</strong>：</p>
+<ul>
+<li>实时日志分析、实时数据分析和监控，如实时推荐、在线广告等。</li>
+</ul>
+</li>
+<li><p><strong>事件驱动应用</strong>：</p>
+<ul>
+<li>例如实时检测系统、金融交易监控、用户行为分析等。</li>
+</ul>
+</li>
+<li><p><strong>数据管道</strong>：</p>
+<ul>
+<li>Flink 可用于构建 ETL（Extract, Transform, Load）管道，进行实时数据的抽取、转换和加载。</li>
+</ul>
+</li>
+<li><p><strong>机器学习与实时分析</strong>：</p>
+<ul>
+<li>Flink 的流处理能力可以与机器学习模型集成，提供实时的预测分析。</li>
+</ul>
+</li>
+<li><p><strong>物联网（IoT）数据处理</strong>：</p>
+<ul>
+<li>在物联网应用中，Flink 可用于处理和分析来自传感器和设备的实时数据流。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3><p>Apache Flink 是一个强大且灵活的实时流处理框架，能够处理海量的实时数据流。它不仅支持高吞吐量和低延迟的流处理，还能提供状态管理、容错和事件时间语义等先进功能。Flink 在大规模分布式系统中的流式和批处理任务中有着广泛的应用，特别适合用于实时数据分析、事件驱动应用和大数据管道等场景。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-12-28T17:57:39.000Z" title="2024/12/29 01:57:39">2024-12-29</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-12-28T18:22:06.396Z" title="2024/12/29 02:22:06">2024-12-29</time></span><span class="level-item"><a class="link-muted" href="/categories/java1/">java1</a><span> / </span><a class="link-muted" href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/">大数据1</a></span><span class="level-item">a few seconds read (About 52 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/12/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a></p><div class="content"><h1 id="我的第一篇博客文章"><a href="#我的第一篇博客文章" class="headerlink" title="我的第一篇博客文章"></a>我的第一篇博客文章</h1><p>这是我的第一篇博客文章。<br>这是第一行代码。<br>这是第二行代码。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello, World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-12-28T17:25:18.226Z" title="2024/12/29 01:25:18">2024-12-29</time></span><span class="level-item">Updated&nbsp;<time dateTime="2024-12-29T04:27:35.069Z" title="2024/12/29 12:27:35">2024-12-29</time></span><span class="level-item">a minute read (About 123 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/12/29/hello-world/">Hello World</a></p><div class="content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -44,7 +219,7 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/java1/"><span class="level-start"><span class="level-item">java1</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/"><span class="level-start"><span class="level-item">大数据1</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-28T17:57:39.000Z">2024-12-29</time></p><p class="title"><a href="/2024/12/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a></p><p class="categories"><a href="/categories/java1/">java1</a> / <a href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/">大数据1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-28T17:25:18.226Z">2024-12-29</time></p><p class="title"><a href="/2024/12/29/hello-world/">Hello World</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/12/"><span class="level-start"><span class="level-item">December 2024</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/java/"><span class="tag">java</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"><span class="tag">大数据</span><span class="tag">1</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://octodex.github.com/images/hula_loop_octodex03.gif" alt="hulatocat"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">hulatocat</p><p class="is-size-6 is-block">A GitHub Octocat</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>GitHub Inc.</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://octodex.github.com/hulatocat" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Icarus" href="https://github.com/ppoffice/hexo-theme-icarus">Icarus</a></div></div></div><!--!--></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a><p class="is-size-7"><span>&copy; 2024 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/java1/"><span class="level-start"><span class="level-item">java1</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/"><span class="level-start"><span class="level-item">大数据1</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-29T04:44:11.000Z">2024-12-29</time></p><p class="title"><a href="/2024/12/29/flink01/">我的测试博客</a></p><p class="categories"><a href="/categories/java1/">java1</a> / <a href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/">大数据1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-28T17:57:39.000Z">2024-12-29</time></p><p class="title"><a href="/2024/12/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a></p><p class="categories"><a href="/categories/java1/">java1</a> / <a href="/categories/java1/%E5%A4%A7%E6%95%B0%E6%8D%AE1/">大数据1</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-28T17:25:18.226Z">2024-12-29</time></p><p class="title"><a href="/2024/12/29/hello-world/">Hello World</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/12/"><span class="level-start"><span class="level-item">December 2024</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/java/"><span class="tag">java</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"><span class="tag">大数据</span><span class="tag">2</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://octodex.github.com/images/hula_loop_octodex03.gif" alt="hulatocat"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">hulatocat</p><p class="is-size-6 is-block">A GitHub Octocat</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>GitHub Inc.</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">3</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://octodex.github.com/hulatocat" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Icarus" href="https://github.com/ppoffice/hexo-theme-icarus">Icarus</a></div></div></div><!--!--></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a><p class="is-size-7"><span>&copy; 2024 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
                     clipboard: true,
